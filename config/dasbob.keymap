@@ -99,6 +99,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <9 8>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
