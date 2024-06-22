@@ -22,6 +22,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        smart_shift: smart_shift {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SMART_SHIFT";
+            bindings = <&sk LSHFT>, <&caps_word>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -54,10 +63,10 @@
 
         Base {
             bindings = <
-&kp W  &kp L  &kp Y           &kp P            &kp B        &kp Z      &kp F        &kp O                 &kp U      &kp SQT
-&kp C  &kp R  &kp S           &kp T            &kp G        &kp M      &kp N        &kp E                 &kp I      &kp A
-&kp Q  &kp J  &kp V           &kp D            &kp K        &kp X      &kp H        &minus_qmark          &kp COMMA  &kp PERIOD
-              &kp LEFT_SHIFT  &lt 1 BACKSPACE  &lt 3 ENTER  &lt 3 TAB  &lt 2 SPACE  &mt LCTRL UNDERSCORE
+&kp W  &kp L  &kp Y         &kp P            &kp B        &kp Z      &kp F        &kp O                 &kp U      &kp SQT
+&kp C  &kp R  &kp S         &kp T            &kp G        &kp M      &kp N        &kp E                 &kp I      &kp A
+&kp Q  &kp J  &kp V         &kp D            &kp K        &kp X      &kp H        &minus_qmark          &kp COMMA  &kp PERIOD
+              &smart_shift  &lt 1 BACKSPACE  &lt 3 ENTER  &lt 3 TAB  &lt 2 SPACE  &mt LCTRL UNDERSCORE
             >;
         };
 
