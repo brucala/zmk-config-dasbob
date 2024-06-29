@@ -115,7 +115,7 @@
         accent: accent {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp K_MENU &kp SQT>;
+            bindings = <&kp K_CMENU &kp SQT>;
             label = "ACCENT";
         };
     };
@@ -134,8 +134,13 @@
         };
 
         accent {
-            bindings = <&kp K_CMENU>;
+            bindings = <&accent>;
             key-positions = <2 3>;
+        };
+
+        menu {
+            bindings = <&kp K_CMENU>;
+            key-positions = <6 7>;
         };
     };
 
@@ -155,10 +160,10 @@
 
         Nav {
             bindings = <
-&trans              &trans        &kp K_BACK      &kp K_FORWARD  &trans         &kp PG_UP  &kp HOME       &kp UP          &kp END    &kp LA(LC(UP))
-&mt LGUI LC(LS(Z))  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL      &trans         &kp PG_DN  &kp LEFT       &kp DOWN_ARROW  &kp RIGHT  &kp LA(LC(DOWN))
-&kp LC(Z)           &kp LC(X)     &kp LC(C)       &kp LC(V)      &kp LA(LC(H))  &trans     &kp LC(PG_UP)  &kp LC(PG_DN)   &trans     &kp PRINTSCREEN
-                                  &trans          &trans         &trans         &trans     &CtrlSpace     &trans
+&kp K_MUTE          &trans        &kp K_BACK      &kp K_FORWARD  &kp C_VOL_UP   &kp PG_UP    &kp HOME       &kp UP          &kp END    &kp LA(LC(UP))
+&mt LGUI LC(LS(Z))  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL      &kp C_VOL_DN   &kp PG_DN    &kp LEFT       &kp DOWN_ARROW  &kp RIGHT  &kp LA(LC(DOWN))
+&kp LC(Z)           &kp LC(X)     &kp LC(C)       &kp LC(V)      &kp LA(LC(H))  &kp K_CMENU  &kp LC(PG_UP)  &kp LC(PG_DN)   &trans     &kp PRINTSCREEN
+                                  &trans          &trans         &trans         &trans       &CtrlSpace     &trans
             >;
         };
 
