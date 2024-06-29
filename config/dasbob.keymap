@@ -134,7 +134,7 @@
         };
 
         accent {
-            bindings = <&kp K_MENU>;
+            bindings = <&kp K_CMENU>;
             key-positions = <2 3>;
         };
     };
