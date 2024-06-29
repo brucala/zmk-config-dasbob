@@ -115,7 +115,7 @@
         accent: accent {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C_MENU &kp SQT>;
+            bindings = <&kp K_MENU &kp SQT>;
             label = "ACCENT";
         };
     };
