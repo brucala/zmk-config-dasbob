@@ -74,30 +74,55 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35>;
         };
+
+        comma_semi: comma_semi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_SEMI";
+            bindings = <&kp COMMA>, <&kp SEMI>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        dot_colon: dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_COLON";
+            bindings = <&kp DOT>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        hmr_comma_semi: hmr_comma_semi {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR_COMMA_SEMI";
+            bindings = <&kp>, <&comma_semi>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <300>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35>;
+        };
+
+        hmr_dot_colon: hmr_dot_colon {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR_DOT_COLON";
+            bindings = <&kp>, <&dot_colon>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <300>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35>;
+        };
     };
 
     macros {
-        repeat: repeat {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_2 &kp NUMBER_4 &kp NUMBER_2 &kp NUMBER_4 &kp NUMBER_2 &kp NUMBER_4>;
-            label = "REPEAT";
-        };
-
-        snip: snip {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LSHFT &kp LEFT_GUI &kp S>;
-            label = "SNIP";
-        };
-
-        lock: lock {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp L>;
-            label = "LOCK";
-        };
-
         CtrlSpace: CtrlSpace {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -151,9 +176,9 @@
 
         Base {
             bindings = <
-&kp W            &kp L            &kp Y         &kp P            &kp B        &kp Z      &kp F         &kp O                     &kp U            &kp SQT
-&kp C            &kp R            &kp S         &kp T            &kp G        &kp M      &kp N         &kp E                     &kp I            &kp A
-&hml LEFT_GUI Q  &hml LEFT_ALT J  &hml LSHFT V  &hml LCTRL D     &kp K        &kp X      &hmr RCTRL H  &hmr_minus_qmark RSHFT 0  &hmr RALT COMMA  &hmr RGUI DOT
+&kp W            &kp L            &kp Y         &kp P            &kp B        &kp Z      &kp F         &kp O                     &kp U                   &kp SQT
+&kp C            &kp R            &kp S         &kp T            &kp G        &kp M      &kp N         &kp E                     &kp I                   &kp A
+&hml LEFT_GUI Q  &hml LEFT_ALT J  &hml LSHFT V  &hml LCTRL D     &kp K        &kp X      &hmr RCTRL H  &hmr_minus_qmark RSHFT 0  &hmr_comma_semi RALT 0  &hmr_dot_colon RGUI 0
                                   &smart_shift  &lt 1 BACKSPACE  &lt 3 ENTER  &lt 4 TAB  &lt 2 SPACE   &mt LCTRL UNDERSCORE
             >;
         };
