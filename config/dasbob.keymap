@@ -230,7 +230,7 @@
 
         sp {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &to 0      &to 5   &to 6   &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &to 0      &tog 5  &tog 6  &trans  &trans
 &trans        &trans        &bt BT_PRV    &bt BT_NXT    &trans        &trans     &enhe   &trans  &trans  &trans
 &bt BT_CLR    &trans        &trans        &trans        &soft_off     &soft_off  &trans  &trans  &trans  &trans
                             &trans        &trans        &trans        &trans     &trans  &trans
