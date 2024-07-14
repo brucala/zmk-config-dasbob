@@ -212,7 +212,7 @@
 
         placid {
             bindings = <
-&kp P            &kp L            &kp C         &kp D            &kp F        &kp SQT     &kp U                    &kp O                     &kp I        &kp B
+&kp P            &kp L            &kp C         &kp D            &kp F        &kp SQT     &kp U                    &kp O                     &kp Y        &kp B
 &kp N            &kp R            &kp S         &kp T            &kp M        &dot_colon  &kp A                    &kp E                     &kp I        &kp H
 &hml LEFT_GUI Q  &hml LEFT_ALT J  &hml LSHFT W  &hml LCTRL G     &kp V        &kp Z       &hmr_comma_semi RCTRL 0  &hmr_minus_qmark RSHFT 0  &hmr RALT X  &hmr RGUI K
                                   &smart_shift  &lt 3 BACKSPACE  &lt 5 ENTER  &lt 6 TAB   &lt 4 SPACE              &mt LCTRL UNDERSCORE
