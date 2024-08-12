@@ -242,7 +242,7 @@
 &kp TILDE      &kp AT     &kp HASH      &kp DOLLAR       &kp PERCENT    &trans  &kp LBKT  &kp RBKT  &trans    &kp GRAVE
 &kp EXCL       &kp PLUS   &kp MINUS     &kp EQUAL        &kp AMPERSAND  &trans  &kp LPAR  &kp RPAR  &kp LT    &kp GT
 &kp BACKSLASH  &kp SLASH  &kp ASTERISK  &kp CARET        &kp PIPE       &trans  &kp LBRC  &kp RBRC  &kp SEMI  &kp COLON
-                          &trans        &mt LC(DEL) DEL  &kp LS(ENTER)  &trans  &trans    &trans
+                          &kp LCTRL     &mt LC(DEL) DEL  &kp LS(ENTER)  &trans  &trans    &trans
             >;
         };
 
