@@ -221,10 +221,10 @@
 
         mafalda {
             bindings = <
-&kp W            &kp V            &kp N         &kp G            &kp Z        &kp SQT     &kp U                    &kp O                     &kp Y        &kp Q
-&kp C            &kp S            &kp R         &kp T            &kp P        &dot_colon  &kp A                    &kp E                     &kp I        &kp H
-&hml LEFT_GUI M  &hml LEFT_ALT F  &hml LSHFT L  &hml LCTRL D     &kp B        &kp X       &hmr_comma_semi RCTRL 0  &hmr_minus_qmark RSHFT 0  &hmr RALT J  &hmr RGUI K
-                                  &smart_shift  &lt 4 BACKSPACE  &lt 6 ENTER  &lt 7 TAB   &lt 5 SPACE              &mt LCTRL UNDERSCORE
+&kp W            &kp V            &kp N         &kp G            &kp Z        &minus_qmark  &kp U                    &kp O                 &kp Y        &kp Q
+&kp C            &kp S            &kp R         &kp T            &kp P        &dot_colon    &kp A                    &kp E                 &kp I        &kp H
+&hml LEFT_GUI M  &hml LEFT_ALT F  &hml LSHFT L  &hml LCTRL D     &kp B        &kp X         &hmr_comma_semi RCTRL 0  &hmr RSHFT SQT        &hmr RALT J  &hmr RGUI K
+                                  &smart_shift  &lt 4 BACKSPACE  &lt 6 ENTER  &lt 7 TAB     &lt 5 SPACE              &mt LCTRL UNDERSCORE
             >;
         };
 
